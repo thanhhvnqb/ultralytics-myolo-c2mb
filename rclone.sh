@@ -1,1 +1,1 @@
-rclone copy -v /home/oem/thanh/ultralytics-8.3.124 gdrive:Working/ultralytics-8.3.124-Svr4/ --exclude=/.git/** --drive-chunk-size=256M --transfers=40 --checkers=40 --tpslimit=9 --fast-list --max-backlog 200000
+rclone copy -v /home/oem/thanh/ultralytics-8.3.124 gdrive:Working/ultralytics-myolo-c2mb/ultralytics-8.3.124-Svr4/ --exclude=/.git/** --drive-chunk-size=256M --transfers=40 --checkers=40 --tpslimit=9 --fast-list --max-backlog 200000

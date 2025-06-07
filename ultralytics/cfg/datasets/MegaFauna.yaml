@@ -1,0 +1,9 @@
+names:
+  - ray
+  - shark
+  - turtle
+nc: 3
+train: train/images
+val: valid/images
+test: test/images
+path: ../datasets/marine/MegaFaunaSplit

@@ -54,7 +54,7 @@ Efficient deep learning models are crucial for real-time computer vision on reso
 | [mYOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-MegaFauna.pt) | 640                   | 83.5                 | 30.8                           | 4.9                           | 2.6                | 6.9              |
 | [mYOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-MegaFauna.pt) | 640                   | 83.7                 | 30.7                              | 5.2                           | 2.7                | 6.5              |
 | [mYOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-MegaFauna.pt) | 640                   | 84.1                 | 39.0                              | 8.7                           | 2.5                | 6.1              |
-
+</details>
 
 ## Installation
 ```

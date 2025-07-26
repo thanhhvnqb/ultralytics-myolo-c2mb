@@ -14,26 +14,46 @@ Efficient deep learning models are crucial for real-time computer vision on reso
 
 ## Main Results
 
-[**Instance segmentation**](https://github.com/sunsmarterjie/yolov12/tree/Seg):
-| Model (seg)                                                                              | size<br><sup>(pixels) | mAP<sup>box<br>50-95 | mAP<sup>mask<br>50-95 | Speed  (ms) <br><sup>T4 TensorRT10<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------:| :------------------: | :-----------------: |
-| [YOLOv12n-seg](https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12n-seg.pt) | 640                   | 39.9                 | 32.8                  | 1.84                           | 2.8                | 9.9              |
-| [YOLOv12s-seg](https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12s-seg.pt) | 640                   | 47.5                 | 38.6                  | 2.84                           | 9.8                | 33.4              |
-| [YOLOv12m-seg](https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12m-seg.pt) | 640                   | 52.4                 | 42.3                  | 6.27                           | 21.9               | 115.1             |
-| [YOLOv12l-seg](https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12l-seg.pt) | 640                   | 54.0                 | 43.2                  | 7.61                          | 28.8               | 137.7             |
-| [YOLOv12x-seg](https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12x-seg.pt) | 640                   | 55.2                 | 44.2                  | 15.43                          | 64.5               | 308.7             |
+[**Object detection**](https://docs.ultralytics.com/tasks/detect/):
+| Model (det)                                                                              | size<br><sup>(pixels) | mAP<sup>det<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| [mYOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n.pt) | 640                   | 39.8                 | 30.8                           | 4.9                           | 2.6                | 7.1              |
+| [mYOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n.pt) | 640                   | 40.2                 | 30.7                              | 5.2                           | 2.7                | 6.7              |
+| [mYOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n.pt) | 640                   | 41.0                 | 39.0                              | 8.7                           | 2.5                | 6.3              |
 
+[**Instance segmentation**](https://docs.ultralytics.com/tasks/segment/):
+| Model (seg)                                                                              | size<br><sup>(pixels) | mAP<sup>mask<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| [mYOLOv8n-seg](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-seg.pt) | 640                   | 32.1                 | 46.5                           | 6.4                           | 2.9                | 11.0              |
+| [mYOLO11n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-seg.pt) | 640                   | 32.5                 | 47.4                              | 8.2                           | 3.0                | 10.6              |
+| [mYOLO12n-seg](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-seg.pt) | 640                   | 33.0                 | 55.7                              | 13.2                           | 2.8                | 10.2              |
 
-[**Classification**](https://github.com/sunsmarterjie/yolov12/tree/Cls):
-| Model (cls)                                                                              | size<br><sup>(pixels) | Acc.<br><sup>top-1<br> | Acc.<br><sup>top-5<br> | Speed  (ms) <br><sup>T4 TensorRT10<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :----------------------------------------------------------------------------------------| :-------------------: | :------------: | :------------: | :-------------------------------------:| :----------------: | :---------------: |
-| [YOLOv12n-cls](https://github.com/sunsmarterjie/yolov12/releases/download/cls/yolov12n-cls.pt) | 224             | 71.7           | 90.5           | 1.27                                   | 2.9                | 0.5               |
-| [YOLOv12s-cls](https://github.com/sunsmarterjie/yolov12/releases/download/cls/yolov12s-cls.pt) | 224             | 76.4           | 93.3           | 1.52                                   | 7.2                | 1.5               |
-| [YOLOv12m-cls](https://github.com/sunsmarterjie/yolov12/releases/download/cls/yolov12m-cls.pt) | 224             | 78.8           | 94.4           | 2.03                                   | 12.7               | 4.5               |
-| [YOLOv12l-cls](https://github.com/sunsmarterjie/yolov12/releases/download/cls/yolov12l-cls.pt) | 224             | 79.5           | 94.5           | 2.73                                   | 16.8               | 6.2               |
-| [YOLOv12x-cls](https://github.com/sunsmarterjie/yolov12/releases/download/cls/yolov12x-cls.pt) | 224             | 80.1           | 95.3           | 3.64                                   | 35.5               | 13.7              |
+[**Human Pose estimation**](https://docs.ultralytics.com/tasks/pose/):
+| Model (pose)                                                                              | size<br><sup>(pixels) | mAP<sup>pose<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| [mYOLOv8n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-pose.pt) | 640                   | 51.4                 | 43.0                           | 5.4                           | 2.9                | 8.0              |
+| [mYOLO11n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-pose.pt) | 640                   | 49.9                 | 43.0                              | 5.7                           | 3.0                | 7.6              |
+| [mYOLO12n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-pose.pt) | 640                   | 48.7                 | 51.9                              | 10.1                           | 2.8                | 7.2              |
 
-</details>
+[**FishInv**](https://github.com/Orange-OpenSource/marine-detect):
+| Model (det)                                                                              | size<br><sup>(pixels) | mAP<sup>pose<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| [YOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolov8n-FishInv.pt) | 640                   | 60.1                 | 25.3                           | 4.8                           | 3.0                | 8.1              |
+| [YOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo11n-FishInv.pt) | 640                   | 61.7                 | 32.5                           | 6.1                           | 2.6                | 6.5               |
+| [YOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo12n-FishInv.pt) | 640                   | 61.9                 | 38.1                           | 8.8                           | 2.6                | 6.5               |
+| [mYOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-FishInv.pt) | 640                   | 61.9                 | 30.8                           | 4.9                           | 2.6                | 6.9              |
+| [mYOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-FishInv.pt) | 640                   | 62.8                 | 30.7                              | 5.2                           | 2.7                | 6.5              |
+| [mYOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-FishInv.pt) | 640                   | 62.2                 | 39.0                              | 8.7                           | 2.5                | 6.1              |
+
+[**MegaFauna**](https://github.com/Orange-OpenSource/marine-detect):
+| Model (det)                                                                              | size<br><sup>(pixels) | mAP<sup>pose<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| [YOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolov8n-MegaFauna.pt) | 640                   | 83.1                 | 25.3                           | 4.8                           | 3.0                | 8.1              |
+| [YOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo11n-MegaFauna.pt) | 640                   | 83.1                 | 32.5                           | 6.1                           | 2.6                | 6.5               |
+| [YOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo12n-MegaFauna.pt) | 640                   | 83.4                 | 38.1                           | 8.8                           | 2.6                | 6.5               |
+| [mYOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-MegaFauna.pt) | 640                   | 83.5                 | 30.8                           | 4.9                           | 2.6                | 6.9              |
+| [mYOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-MegaFauna.pt) | 640                   | 83.7                 | 30.7                              | 5.2                           | 2.7                | 6.5              |
+| [mYOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-MegaFauna.pt) | 640                   | 84.1                 | 39.0                              | 8.7                           | 2.5                | 6.1              |
 
 
 ## Installation

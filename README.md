@@ -16,28 +16,28 @@ Efficient deep learning models are crucial for real-time computer vision on reso
 
 [**Object detection**](https://docs.ultralytics.com/tasks/detect/):
 | Model (det)                                                                              | size<br><sup>(pixels) | mAP<sup>det<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: | :-----------------: |
 | [mYOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n.pt) | 640                   | 39.8                 | 30.8                           | 4.9                           | 2.6                | 7.1              |
 | [mYOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n.pt) | 640                   | 40.2                 | 30.7                              | 5.2                           | 2.7                | 6.7              |
 | [mYOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n.pt) | 640                   | 41.0                 | 39.0                              | 8.7                           | 2.5                | 6.3              |
 
 [**Instance segmentation**](https://docs.ultralytics.com/tasks/segment/):
 | Model (seg)                                                                              | size<br><sup>(pixels) | mAP<sup>mask<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: | :-----------------: |
 | [mYOLOv8n-seg](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-seg.pt) | 640                   | 32.1                 | 46.5                           | 6.4                           | 2.9                | 11.0              |
 | [mYOLO11n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-seg.pt) | 640                   | 32.5                 | 47.4                              | 8.2                           | 3.0                | 10.6              |
 | [mYOLO12n-seg](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-seg.pt) | 640                   | 33.0                 | 55.7                              | 13.2                           | 2.8                | 10.2              |
 
 [**Human Pose estimation**](https://docs.ultralytics.com/tasks/pose/):
 | Model (pose)                                                                              | size<br><sup>(pixels) | mAP<sup>pose<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: | :-----------------: |
 | [mYOLOv8n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolov8n-pose.pt) | 640                   | 51.4                 | 43.0                           | 5.4                           | 2.9                | 8.0              |
 | [mYOLO11n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo11n-pose.pt) | 640                   | 49.9                 | 43.0                              | 5.7                           | 3.0                | 7.6              |
 | [mYOLO12n-pose](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/myolo12n-pose.pt) | 640                   | 48.7                 | 51.9                              | 10.1                           | 2.8                | 7.2              |
 
 [**FishInv**](https://github.com/Orange-OpenSource/marine-detect):
 | Model (det)                                                                              | size<br><sup>(pixels) | mAP<sup>pose<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: | :-----------------: |
 | [YOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolov8n-FishInv.pt) | 640                   | 60.1                 | 25.3                           | 4.8                           | 3.0                | 8.1              |
 | [YOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo11n-FishInv.pt) | 640                   | 61.7                 | 32.5                           | 6.1                           | 2.6                | 6.5               |
 | [YOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo12n-FishInv.pt) | 640                   | 61.9                 | 38.1                           | 8.8                           | 2.6                | 6.5               |
@@ -47,7 +47,7 @@ Efficient deep learning models are crucial for real-time computer vision on reso
 
 [**MegaFauna**](https://github.com/Orange-OpenSource/marine-detect):
 | Model (det)                                                                              | size<br><sup>(pixels) | mAP<sup>pose<br>50-95 | Speed  (ms) <br><sup>AMD Ryzen 9 3900XT<br> | Speed  (ms) <br><sup>RTX 3090<br> | params<br><sup>(M) | FLOPs<br><sup>(G) |
-| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: |
+| :------------------------------------------------------------------------------------| :--------------------: | :-------------------: | :---------------------: | :--------------------------------: | :-----------------: | :-----------------: |
 | [YOLOv8n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolov8n-MegaFauna.pt) | 640                   | 83.1                 | 25.3                           | 4.8                           | 3.0                | 8.1              |
 | [YOLO11n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo11n-MegaFauna.pt) | 640                   | 83.1                 | 32.5                           | 6.1                           | 2.6                | 6.5               |
 | [YOLO12n](https://github.com/thanhhvnqb/ultralytics-myolo-c2mb/releases/download/v1.0/yolo12n-MegaFauna.pt) | 640                   | 83.4                 | 38.1                           | 8.8                           | 2.6                | 6.5               |

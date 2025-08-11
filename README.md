@@ -69,7 +69,7 @@ pip install -e .
 ```python
 from ultralytics import YOLO
 
-model = YOLO('yolov12{n/s/m/l/x}.pt')
+model = YOLO('myolo12n.pt')
 model.val(data='coco.yaml', save_json=True)
 ```
 
@@ -105,7 +105,7 @@ results[0].show()
 ```python
 from ultralytics import YOLO
 
-model = YOLO('yolov12{n/s/m/l/x}.pt')
+model = YOLO('myolo12n.pt')
 model.predict()
 ```
 
@@ -113,7 +113,7 @@ model.predict()
 ```python
 from ultralytics import YOLO
 
-model = YOLO('yolov12{n/s/m/l/x}.pt')
+model = YOLO('myolov12n.pt')
 model.export(format="engine", half=True)  # or format="onnx"
 ```
 
